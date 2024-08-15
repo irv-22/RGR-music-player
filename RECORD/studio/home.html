@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>grids</title>
+        <style>
+            body{
+                margin: 0;
+                background-color: darkslategrey;
+                color: aliceblue;
+            }
+            .container{
+                width: 100vw;
+                height: 100vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 50px 1fr 1fr 100px;
+                padding: 10px;
+                box-sizing: border-box;
+                gap: 0px;
+            
+                
+            }
+            .container div{
+                padding: 10px;
+                border: 0px solid black;
+            }
+            .header{grid-column-start: 1;
+                grid-column-end: 5;
+                background-color: rgb(81, 77, 85);
+            }
+            .content-large{
+                grid-row-start: 2;
+                grid-row-end: span 2;
+            }
+            .footer{
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            span{
+                float: left;
+                font-size: 35px;
+                color: aliceblue;
+                text-shadow: 25px;
+                text-decoration:line-through solid rgb(226, 221, 221);
+            }
+            .header #search{
+                height: 4vh;
+                width: 20vw;
+                border-radius: 10px; 
+                border: 1px solid white;
+                margin-left: 50px;
+                
+            }
+            .header input{
+                justify-content: center;
+                text-align: center;
+            }
+            #button{
+                height: 4vh;
+                border-radius: 10px;
+                background-color: rgb(228, 216, 231);
+                border: 1px solid white;
+            }
+            .header a{
+                float: right;
+                margin-right:10px ;
+                color: aliceblue;
+            }
+            .footer{
+                color: aliceblue;
+            }
+            .footer a{
+                margin-left: 15px;
+                color: aliceblue;
+            }
+            .studio{
+                font-size: 30px;
+                color: rgb(233, 227, 227);
+                text-decoration: none;
+            }
+            .content-large .studio-list ul li{
+                list-style-type:square;
+            }
+            .content-small a{color: rgb(6, 120, 219);}
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            ul li{
+                font-size: 20px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <span>RANGER GANG RECORDS</span>
+                <input type="search" placeholder="search your favorite songs" name="search" id="search" >
+                <input type="button" value="Search" id="button">
+                <a href="#">New Release</a>
+                <a href="#">Albums</a>
+                <a href="#">Artists</a>
+                <a href="#">About</a>
+
+            </div>
+            <div class="content-large">
+                <span class="studio">Studio&check;&check;</span> <br>
+               <br>
+               <div class="studio-list">
+                    <ul>
+                        <li>Book a studio session</li>
+                        <li>studio prices per hour</li>
+                        <li>ASK for a feature</li>
+                        <li>Operating times</li>
+                    </ul>
+                </div>
+                <img src="img/studio/studio (1).jpeg" alt="">
+            </div>
+            <div class="content-large">
+                TOP TRACKS
+                <ul>
+                    <li>We got it(outro)</li>
+                    <li>on fleek</li>
+                    <li>shift</li>
+                    <li>POP Em</li>
+                    <li>First Aid(feat. Riso)</li>
+                    <li>Unlikely(yeah)</li>
+                    <li>Buss Summ</li>
+                    <li>Bite</li>
+                    <li>Solid as they come</li>
+                    <li>BeatBOX Remix</li>
+                    <li>Cross your heart ft Bang kid</li>
+                    <li>Flight Risk</li>
+                    <li>Follow me ft small G</li>
+                    <li>Im a beast</li>
+                    <li>Me or Him ft Nemis</li>
+                    <li>weed ft Juan-Dre</li>
+                </ul>
+
+            </div>
+            <div class="content-small">
+                <img src="img/studio/on fleek.jpg" alt="on fleek">
+
+            </div>
+            <div class="content-small">
+                <img src="img/studio/bitch im cyril.jpg" alt="">
+
+            </div>
+            <div class="content-small">
+                <img src="img/studio/nemit.jpg" alt="">
+            </div>
+            <div class="content-small">
+                BOOKINGS<br>
+                <a href="#">TO BOOK De Flame click here</a><br>
+                <img src="img/studio/tracklist.jpg" alt="">
+
+
+
+            </div>
+            <div class="footer">
+                <a href="#">About</a>
+                <a href="#">Policy</a>
+                <a href="#">Contacts</a>
+                <a href="#">Copyrights</a>
+            </div>
+        </div>
+
+    </body>
+</html>
